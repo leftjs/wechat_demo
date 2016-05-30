@@ -3,7 +3,10 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	console.log(req.query)
+	console.log("req", req)
+	console.log("req.body", req.body)
+	console.log("req.query", req.query)
+	console.log("req.params", req.params)
   res.send(req.query["echostr"])
 });
 
