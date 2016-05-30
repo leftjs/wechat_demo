@@ -7,4 +7,11 @@ router.get('/', function(req, res, next) {
   res.send(req.query["echostr"])
 });
 
+router.post('/',function(req,res,next) {
+	console.log("req.body", req.body)
+	console.log("req.query", req.query)
+	console.log("req.params", req.params)
+	res.end("end")
+})
+
 module.exports = router;
