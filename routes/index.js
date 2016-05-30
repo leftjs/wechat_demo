@@ -8,6 +8,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/',function(req,res,next) {
+	console.log("req", req)
 	console.log("req.body", req.body)
 	console.log("req.query", req.query)
 	console.log("req.params", req.params)
